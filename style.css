@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+.header .contact {
+    text-align: right;
+    font-size: 14px;
+}
+.navbar {
+    background-color: #000080;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.content {
+    padding: 20px;
+}
+.content h1 {
+    text-align: center;
+    font-size: 24px;
+}
+.content p {
+    text-align: justify;
+    font-size: 16px;
+}
+.more-info {
+    display: flex;
+    margin-top: 20px;
+}
+.more-info .sidebar {
+    width: 20%;
+    border-right: 1px solid #ccc;
+}
+.more-info .sidebar ul {
+    list-style-type: none;
+    padding: 5px;
+}
+.more-info .sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.more-info .sidebar ul li a {
+    
+    color: black;
+    cursor: pointer;
+}
+.more-info .sidebar ul li:hover {
+    background-color: #f0f0f0;
+    color: #000080;
+}
+.more-info .main-content {
+    width: 80%;
+    padding: 20px;
+}
+.main-content > div {
+    display: none;
+}
+.main-content {
+    width: 80%;              
+    max-width: 800px;        
+    margin-right: 100px;
+    margin: 20px left;       
+    padding: 20px;           
+    border: 2px solid #ccc;   
+    border-radius: 10px;     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;   
+}
+.main-content > div.active {
+    display: block;
+}
+.faculty-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faculty-list li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.faculty-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+.faculty-list li i {
+    color: #888;
+    float: right;
+}
+
+.faculty-details {
+    display: none;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.faculty-info {
+    display: flex;
+    align-items: center;
+}
+
+.faculty-info img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.faculty-info .details {
+    flex-grow: 1;
+}
+
+.faculty-info .details p {
+    margin: 5px 0;
+}
+
+.faculty-info .details strong {
+    font-weight: bold;
+}
+
+.co-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.co-table th, .co-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.achievements {
+    display: flex;
+    margin-top: 20px;
+}
+.achievements .box {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.achievements .box.staff {
+    background-color: #ff4d4d;
+}
+.achievements .box.students {
+    background-color: #4CAF50;
+}
+
+#laboratories {
+    margin-top: 20px;
+}
+
+.lab-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lab-table th, 
+.lab-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.lab-table th {
+    background-color: rgba(0, 0, 0, 0.1); 
+    font-weight: bold;
+}
+
+.lab-table td {
+    background-color: rgba(255, 255, 255, 0.6); 
+}
+
+.lab-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05); 
+}
+.hidden-content {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    width: 100%; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    border-radius: 5px; 
+    padding: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.slide {
+    display: none; 
+    width: 100%; 
+    height: auto; 
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 1); 
+}
